@@ -1,1 +1,1 @@
-# PRS
+# Polygenic Risk Score
