@@ -104,10 +104,8 @@ if (mergeByRsid) {
 nameScore <- parsed$name_score
 # If the PGS is assigned a name, the diagnostic plot (auto mode only)
 # will get this name and placed in the same directory as the score
-if (!is.na(nameScore)) {
-	dirPlot <- dirname(fileOutput)
-	fileOutputPlot <- paste0(dirPlot, '/', nameScore, '.png')
-}
+
+fileOutputPlot <- paste0(fileOutput,".png")
 # Parameters to LDpred
 parHyperPLength <- parsed$hyper_p_length
 parHyperPMax <- parsed$hyper_p_max
