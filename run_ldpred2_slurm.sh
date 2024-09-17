@@ -28,7 +28,7 @@ then
   # Convert plink binary format to rds,bk
   Rscript ${SCRIPTDIR}/createBackingFile.R --file-input $fileGeno --file-output $fileGenoRDS
 fi
-# Generate PGS using LDPRED2
+# Generate PRS using LDPRED2
 Rscript ${SCRIPTDIR}/ldpred2.R \
  --ldpred-mode inf \
  --col-stat OR \
